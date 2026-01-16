@@ -10,14 +10,14 @@ state0 is a stable, modern, easy to configure and opinionated Linux (configurati
 
 ### First run
 
-1. `cd ~`
-2. `git clone https://github.com/TheProductiveDeveloper/state0.git`
-3. `cd state0/`
-4. `git checkout <branch>` (optional step)
-5. Run the initPC script launcher:
-    * `./main.sh` - on Linux distros or Termux
+1. Fork this repo and KEEP THE REPOSITORY NAME (it is hardcoded in some bash aliases).
+2. `cd ~`
+3. `git clone <URL of your fork>` (clone your fork)
+4. `cd state0/`
+5. `git checkout <branch>` (optional step)
+6. Run `./main.sh`
   
-✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat
+✔️ *Note: Logs will appear in the folder `state0/Logs/`. Use `cat
 <logfile>` to display the log file with the original VT100 colors.*
 
 ### Subsequent runs
