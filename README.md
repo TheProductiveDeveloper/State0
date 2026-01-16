@@ -1,8 +1,36 @@
 # state0 Linux - opinionated postinstall script
 
+## NOTE: writing in progress
+
 *Note: For non-opinionated a template, go to [state0_template](https://github.com/TheProductiveDeveloper/state0_template).*
 
 state0 is a stable, modern, easy to configure and opinionated Linux (configuration as code postinstall script). It is conceptually similar to [Omarchy](https://omarchy.org/), but production-stable and easier to make your own. This setup script will help you to quickly init new machines for your personal & professional use with all your packages, configuration and settings installed in 10-30mins. It also includes CI via GitHub Actions so you can be always certain that the configuration you are applying is not broken.
+
+## How to use
+
+### First run
+
+1. `cd ~`
+2. `git clone https://github.com/TheProductiveDeveloper/state0.git`
+3. `cd state0/`
+4. `git checkout <branch>` (optional step)
+5. Run the initPC script launcher:
+    * `./main.sh` - on Linux distros or Termux
+  
+✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat
+<logfile>` to display the log file with the original VT100 colors.*
+
+### Subsequent runs
+
+Just run:
+
+```bash
+refresh
+```
+
+from bash.
+
+TODO ** add rest of the chapter
 
 ### Similar concepts & tech:
 - What a Dockerfile is to Docker image, state0 is to your Desktop/CLI Linux,
@@ -13,14 +41,9 @@ state0 is a stable, modern, easy to configure and opinionated Linux (configurati
 ### Keeping your Linux configuration as code is useful when:
 - reinstalling your desktop Linux - reinstallation & configuration takes minutes instead of days,
 - you want to be sure that your config change is not buggy, before you apply it to your machine (this repo includes CI script and easy integration test via GithubActions),
-- for keeping configuration on numerous machines you use (including Android Termux) in sync,
+- for keeping configuration on numerous machines and/or Linux distributions you use (including Android Termux) in sync,
 - when you want to share/review/modularize your Linux config,
 - having your configuration as code helps you with troubleshooting if sth breaks,
 - you want to create an easy configure script for your new coleagues, so that they don't need to follow outdated internal setup guides,
 - you want to make more informed choices about your configuration & feel less fear when experimenting with configuration changes on your Linux machine (if you break sth. you can allways revert your commit and rebuild your machine),
 - you want to manage your dotfiles the same way as any other Git repo (bare Git repo dotfile manager included)...
-
-
-
-
-
