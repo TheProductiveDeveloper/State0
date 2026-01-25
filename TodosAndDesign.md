@@ -17,4 +17,7 @@ I will be forced to add my personal changes into separate files.
 state0_template -> state0 -> state0_fork
 
 
+Development workflow:
+- I develop in my personal fork as I did so far & cherry-pick relevant commits to the state0_template vs. state0 and rebase on top of state0
+
 TODO - consider moving this repo to my regular github?
